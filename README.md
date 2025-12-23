@@ -276,8 +276,9 @@ similarly and only requires configuring the same four components.
 
 </details>
 
+4. LLM Config (Optional)
 
-
+- Qwen3-VL (transformers>=4.57.0, qwen_vl_utils>=0.0.14)
 
 
 ## Citation

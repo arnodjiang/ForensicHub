@@ -1,10 +1,10 @@
-from ForensicHub.core.base_llm import BaseLLM
+from ForensicHub.core.base_model import BaseModel
 from ForensicHub.registry import register_model
 
 import torch
 from transformers import AutoModelForImageTextToText, AutoProcessor
 
-class Qwen3VLLLM(BaseLLM):
+class Qwen3VLLLM(BaseModel):
     def __init__(self, backbone='Qwen/Qwen3-VL-8B-Instruct'):
         super(Qwen3VLLLM, self).__init__()
 

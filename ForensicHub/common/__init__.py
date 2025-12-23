@@ -8,5 +8,6 @@ from .backbones.unet import *
 from .backbones.mobilenet import *
 from .backbones.vit import *
 from .backbones.densenet import *
+from .backbones.qwen3_vl_llm import *
 from .wrapper.mask2labelwrapper import Mask2LabelWrapper
 from .wrapper.crossdatasetwrapper import CrossDataset
