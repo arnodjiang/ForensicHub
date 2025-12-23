@@ -30,3 +30,5 @@ torchvision
 tqdm
 ttach
 yacs
+transformers
+flash-attn
