@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 from typing import Dict, Any, Optional
+from PIL import Image
+import torchvision.transforms as transforms
 
 
 class BaseModel(nn.Module):
@@ -104,3 +106,14 @@ class BaseModel(nn.Module):
             Dict[str, float]: Dictionary containing metric names and values
         """
         raise NotImplementedError("Subclasses must implement get_metrics method")
+    
+    def to_pil_image(self, tensor: torch.Tensor) -> Image.Image:
+        """Convert a tensor to a PIL Image.
+        
+        Args:
+            tensor (torch.Tensor): Input tensor of shape (C, H, W) with values in [0, 1]
+            
+        Returns:
+            Image.Image: PIL Image
+        """
+        return transforms.ToPILImage()(tensor)

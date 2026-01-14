@@ -272,13 +272,11 @@ After creating the YAML file, you can launch training using `statics/run.sh` aft
 use `statics/batch_run.sh` for batch experiments, which internally invokes multiple `run.sh` scripts. Testing works
 similarly and only requires configuring the same four components.
 
-
-
-</details>
-
 4. LLM Config (Optional)
 
 - Qwen3-VL (transformers>=4.57.0, qwen_vl_utils>=0.0.14)
+
+</details>
 
 
 ## Citation
